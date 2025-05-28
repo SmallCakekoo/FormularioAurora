@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario de Evaluación de Prototipo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo-container">
+        <img src="assets/logochico.png" alt="Logo Aurora" class="logo-aurora" />
+        <img
+          src="assets/logocarvajal.png"
+          alt="Logo Fundación Carvajal"
+          class="logo-carvajal"
+        />
+      </div>
+      <h1>Evaluación de Prototipo Aurora</h1>
+      <p class="description">
+        Aurora es una plataforma digital offline-first que facilita la conexión
+        entre la Fundación Carvajal y las comunidades, permitiendo a los
+        gestores recopilar información, acompañar familias y coordinar
+        actividades incluso sin internet.
+      </p>
+      <form id="evaluationForm">
+        <div class="form-grid">
+          <div class="form-group nombre-gestora">
+            <label for="nombreGestora">Nombre de la Gestora:</label>
+            <input
+              type="text"
+              id="nombreGestora"
+              name="nombreGestora"
+              required
+              placeholder="Ingrese su nombre completo"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="meGustaPorQue">¿Qué te gusta del prototipo?</label>
+            <textarea
+              id="meGustaPorQue"
+              name="meGustaPorQue"
+              required
+              placeholder="Comparte tu opinión positiva sobre el prototipo"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="noMeGustaPorQue">¿Qué podría mejorar?</label>
+            <textarea
+              id="noMeGustaPorQue"
+              name="noMeGustaPorQue"
+              required
+              placeholder="Comparte los aspectos que se pueden mejorar o no te gustaron"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="deseariaQue">Desearía que...</label>
+            <textarea
+              id="deseariaQue"
+              name="deseariaQue"
+              required
+              placeholder="Expresa tus deseos o sugerencias para el prototipo"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="queTalSi">¿Qué tal si...?</label>
+            <textarea
+              id="queTalSi"
+              name="queTalSi"
+              required
+              placeholder="Propón ideas o alternativas para mejorar"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="laGentePensariaQue">La gente pensaría que...</label>
+            <textarea
+              id="laGentePensariaQue"
+              name="laGentePensariaQue"
+              required
+              placeholder="¿Cuál crees que sería la percepción de los usuarios?"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="nosBeneficiariaEn">Beneficios principales</label>
+            <textarea
+              id="nosBeneficiariaEn"
+              name="nosBeneficiariaEn"
+              required
+              placeholder="Describe los beneficios que traería"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="meGustariaQueBeneficiaraEn"
+              >Beneficios adicionales</label
+            >
+            <textarea
+              id="meGustariaQueBeneficiaraEn"
+              name="meGustariaQueBeneficiaraEn"
+              required
+              placeholder="¿Qué otros beneficios te gustaría ver?"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="siPeroTenerEnCuenta">Consideraciones importantes</label>
+            <textarea
+              id="siPeroTenerEnCuenta"
+              name="siPeroTenerEnCuenta"
+              required
+              placeholder="Menciona aspectos importantes a considerar como barreras"
+            ></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="comentariosGenerales">Comentarios adicionales</label>
+            <textarea
+              id="comentariosGenerales"
+              name="comentariosGenerales"
+              required
+              placeholder="Agrega cualquier comentario adicional que consideres relevante"
+            ></textarea>
+          </div>
+        </div>
+
+        <div class="button-container">
+          <button type="submit">Enviar Evaluación</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- Modal de éxito -->
+    <div class="modal-overlay" id="successModal">
+      <div class="modal">
+        <img src="assets/ok.png" alt="Éxito" />
+        <h2>¡Formulario Enviado!</h2>
+        <p>Gracias por tu valiosa evaluación del prototipo.</p>
+        <button onclick="closeModal()">Aceptar</button>
+      </div>
+    </div>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>

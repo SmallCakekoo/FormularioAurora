@@ -7,13 +7,13 @@ import {
 
 // Configuración de Firebase
 const firebaseConfig = {
-  apiKey: "AIzaSyBcMG8ALGNM8V92OUeOfm0IfAfAUOrjEXM",
-  authDomain: "formularioaurora.firebaseapp.com",
-  projectId: "formularioaurora",
-  storageBucket: "formularioaurora.firebasestorage.app",
-  messagingSenderId: "666020537887",
-  appId: "1:666020537887:web:df5f31ac57913b0d2bd72a",
-  measurementId: "G-SPY450LS1R",
+  apiKey: process.env.FIREBASE_API_KEY,
+  authDomain: process.env.FIREBASE_AUTH_DOMAIN,
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  storageBucket: process.env.FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
+  appId: process.env.FIREBASE_APP_ID,
+  measurementId: process.env.FIREBASE_MEASUREMENT_ID,
 };
 
 // Inicializar Firebase

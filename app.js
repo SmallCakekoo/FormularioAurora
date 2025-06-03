@@ -56,6 +56,19 @@ form.addEventListener("submit", async (e) => {
       siPeroTenerEnCuenta: form.siPeroTenerEnCuenta.value,
       comentariosGenerales: form.comentariosGenerales.value,
       fechaCreacion: new Date(),
+      // Nuevos campos de evaluación por puntos
+      pertinencia_general:
+        form.querySelector('input[name="pertinencia_general"]:checked')
+          ?.value || null,
+      factibilidad_general:
+        form.querySelector('input[name="factibilidad_general"]:checked')
+          ?.value || null,
+      viabilidad_general:
+        form.querySelector('input[name="viabilidad_general"]:checked')?.value ||
+        null,
+      impacto_general:
+        form.querySelector('input[name="impacto_general"]:checked')?.value ||
+        null,
     };
 
     console.log("Intentando guardar datos:", formData);

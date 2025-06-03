@@ -33,7 +33,7 @@
       <form id="evaluationForm">
         <div class="form-grid">
           <div class="form-group nombre-gestora">
-            <label for="nombreGestora">Nombre de la Gestora:</label>
+            <label for="nombreGestora">Nombre:</label>
             <input
               type="text"
               id="nombreGestora"
@@ -133,6 +133,106 @@
               required
               placeholder="Agrega cualquier comentario adicional que consideres relevante"
             ></textarea>
+          </div>
+        </div>
+
+        <!-- Sección de preguntas de evaluación -->
+        <div class="evaluation-questions">
+          <h2>Evaluación por Puntos</h2>
+
+          <h3>Pertinencia</h3>
+          <div class="form-group rating-group">
+            <label
+              >¿Este sistema offline-first responde adecuadamente al contexto
+              social al que está dirigido?</label
+            >
+            <div class="rating-scale">
+              <span>1</span>
+              <input
+                type="radio"
+                name="pertinencia_general"
+                value="1"
+                required
+              />
+              <span>2</span>
+              <input type="radio" name="pertinencia_general" value="2" />
+              <span>3</span>
+              <input type="radio" name="pertinencia_general" value="3" />
+              <span>4</span>
+              <input type="radio" name="pertinencia_general" value="4" />
+              <span>5</span>
+              <input type="radio" name="pertinencia_general" value="5" />
+            </div>
+          </div>
+
+          <h3>Factibilidad</h3>
+          <div class="form-group rating-group">
+            <label
+              >¿Ves posible implementar esta app con los recursos y capacidades
+              actuales?</label
+            >
+            <div class="rating-scale">
+              <span>1</span>
+              <input
+                type="radio"
+                name="factibilidad_general"
+                value="1"
+                required
+              />
+              <span>2</span>
+              <input type="radio" name="factibilidad_general" value="2" />
+              <span>3</span>
+              <input type="radio" name="factibilidad_general" value="3" />
+              <span>4</span>
+              <input type="radio" name="factibilidad_general" value="4" />
+              <span>5</span>
+              <input type="radio" name="factibilidad_general" value="5" />
+            </div>
+          </div>
+
+          <h3>Viabilidad</h3>
+          <div class="form-group rating-group">
+            <label
+              >¿Crees que el sistema es sostenible y razonable en términos de
+              costos?</label
+            >
+            <div class="rating-scale">
+              <span>1</span>
+              <input
+                type="radio"
+                name="viabilidad_general"
+                value="1"
+                required
+              />
+              <span>2</span>
+              <input type="radio" name="viabilidad_general" value="2" />
+              <span>3</span>
+              <input type="radio" name="viabilidad_general" value="3" />
+              <span>4</span>
+              <input type="radio" name="viabilidad_general" value="4" />
+              <span>5</span>
+              <input type="radio" name="viabilidad_general" value="5" />
+            </div>
+          </div>
+
+          <h3>Impacto</h3>
+          <div class="form-group rating-group">
+            <label
+              >¿Este sistema puede generar un impacto positivo al atraer nuevas
+              familias a participar?</label
+            >
+            <div class="rating-scale">
+              <span>1</span>
+              <input type="radio" name="impacto_general" value="1" required />
+              <span>2</span>
+              <input type="radio" name="impacto_general" value="2" />
+              <span>3</span>
+              <input type="radio" name="impacto_general" value="3" />
+              <span>4</span>
+              <input type="radio" name="impacto_general" value="4" />
+              <span>5</span>
+              <input type="radio" name="impacto_general" value="5" />
+            </div>
           </div>
         </div>
 
